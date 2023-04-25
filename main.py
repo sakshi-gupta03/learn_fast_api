@@ -10,7 +10,7 @@ def home():
 @app.get("/about")
 def about():
 
-    return {"print":"hello"}
+    return {}
 
 if __name__=="__main__":
 
