@@ -7,6 +7,11 @@ app=FastAPI()
 def home():
 
     return {"print":"hello world"}
+@app.get("/about")
+def about():
+
+    return {"print":"hello"}
 
 if __name__=="__main__":
+
     uvicorn.run(app,port=5000)
